@@ -1,3 +1,8 @@
-@import './base/base-settings';
 @import './utils/variables';
+@import './base/base-settings';
+@import './utils/container';
 
+
+.color{
+    fill:black;
+}
