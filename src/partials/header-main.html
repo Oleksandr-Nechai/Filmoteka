@@ -1,25 +1,30 @@
-<header style="background-color:orange ;">
-    <div class="container">
-        <nav>
-            <a>
-                <svg width="24" height="24">
+<div class="container">
+        <nav class="navigation">
+            <a href="./index.html" class="logo">
+                <svg  width="24" height="24" >
                     <use href="./images/svg/sprite.svg#icon-film"></use>
                 </svg>
-                
             </a>
-            <ul>
-                <li>Home</li>
-                <li>My library</li>
+            <ul class="site-nav">
+                <li class="site-nav__item site-nav__item--current">
+                    <a class="site-nav__link" href="./index.html">Home</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="./">My library</a>
+                </li>
             </ul>
         </nav>
-        <form>
+        <form class="form">
             <label >
-            <input type="text" placeholder="Поиск фильмов">
-            <svg width="12" height="12" class="color">
-                <use href='./images/svg/sprite.svg#icon-search'></use>
-            </svg>
+            <input class="form__input" type="text" placeholder="Поиск фильмов">
+            <button class="form__button " type="submit">
+                <svg class="form__icon" width="12" height="12" class="color">
+                    <use href="./images/svg/sprite.svg#icon-search"></use>
+                </svg>
+            </button>
         </label>
+        <p class="form__message cut-down">Search result not successful. Enter the correct movie name and try again.</p>
         </form>
+        
 
     </div>
-</header>
