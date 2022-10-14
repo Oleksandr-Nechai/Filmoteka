@@ -1,0 +1,8 @@
+@mixin transition ($property:color) {
+    transition: $property 500ms $timing-function;
+    &:hover,&:focus {
+        @content
+    }
+ 
+}
+
